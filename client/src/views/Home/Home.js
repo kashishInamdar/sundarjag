@@ -1,13 +1,17 @@
+import Navbar from "../../components/Navbar/Navbar"
 import "./Home.css"
 
-const Home = ()=>{
-    return(
-       <div>
-        <div className="front-page">
+const Home = () => {
+    return (
+        <>
 
-        </div>
+            <div className="home-container">
+                <Navbar />
 
-       </div>
+            </div>
+
+        </>
+
     )
 }
 export default Home

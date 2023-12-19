@@ -39,6 +39,11 @@ const Navbar = () => {
 
                         </ul>
                     </div>
+
+                    <div className="">
+                    <button className="btn btn-info text-white">Login</button>
+                    </div>
+
                 </div>
             </nav>
         </>

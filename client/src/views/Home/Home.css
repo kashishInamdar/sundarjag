@@ -1,6 +1,7 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.front-page{
+    height: 80vh;
+    background-image: url("https://img.freepik.com/free-photo/man-with-copy-space-futuristic-device_23-2148864987.jpg?w=996&t=st=1702971876~exp=1702972476~hmac=58cd158b0effb8dcc3750e688d671f69d1c16288a6ebde8e282f00bbf6570387");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }

@@ -1,53 +1,54 @@
-import "./Navbar.css"
-import { Link } from "react-router-dom"
-import idevifyLogo from './../../assests/idevifysolutions.png'
-const Navbar = () => {
-    return (
-        <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
-                <div className="container-fluid">
-                    <Link className="navbar-brand" to=""> <img src={idevifyLogo} className="idevifylogo  mx-5" /> </Link>
+import React, { useEffect, useState } from 'react';
+import './Navbar.css';
+import { Link } from 'react-router-dom';
+import menu from "./menu.png"
+import idevifyLogo from "./../../assests/idevifysolutions.png"
 
-                    <div className="collapse navbar-collapse d-flex justify-content-center  fs-5" id="navbarNavDropdown">
-                        <ul className="navbar-nav ">
-                            <li className="nav-item me-5">
-                                <Link className="nav-link active" aria-current="page" to="#">Home</Link>
-                            </li>
 
-                            <li className="nav-item dropdown me-5">
-                                <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Services
-                                </Link>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><Link className="dropdown-item" to="#">Web Development</Link></li>
-                                    <li><Link className="dropdown-item" to="#">
-                                        Android Development</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Business Development</Link></li>
-                                    <li><Link className="dropdown-item" to="#">
-                                        Digital Marketing</Link></li>
-                                    <li><Link className="dropdown-item" to="#">
-                                        UI / UX Designing</Link></li>
-                                    <li><Link className="dropdown-item" to="#">Software Training</Link></li>
-                                </ul>
-                            </li>
-                            <li className="nav-item me-5">
-                                <Link className="nav-link" to="#">Career</Link>
-                            </li>
-                            <li className="nav-item me-5">
-                                <Link className="nav-link" to="#">About</Link>
-                            </li>
+function Navbar() {
+  const [userdata, setUserdata] = useState({});
+  const[menuBtn , setMenuBtn] = useState("disply") 
 
-                        </ul>
-                    </div>
+  useEffect(() => {
+    const userFromlocalStorage = JSON.parse(localStorage.getItem('user') || '{}');
+    setUserdata(userFromlocalStorage);
+  }, [])
 
-                    <div className="">
-                    <button className="btn btn-info text-white">Login</button>
-                    </div>
+  return ( 
+    <div className='nav-container'>
+      <Link className="navbar-brand" to=""> <img src={idevifyLogo} className="idevifylogo  mx-5" /> </Link>
+      {/* <Link to='/'className='logo1' > <span className='logoname'>Book Bus</span></Link> */}
+      <img src={menu} alt="menu" className='menu-btn'
+      onClick={()=>{
+        setMenuBtn(menuBtn === "disply" ? "-" : "disply")
+      }}
+      />
+      <div className={`${menuBtn}`}>
+      {/* <Link to="/orders" className='nav-btn'>My Orders</Link> */}
 
-                </div>
-            </nav>
-        </>
-    )
+        <Link to="/blog" className='nav-btn' >Blog</Link>
+        <Link to="/contact" className='nav-btn'> Contact</Link>
+        <Link to="/faq" className='nav-btn'>FAQ</Link>
+        <Link to="/signup" className='nav-btn'>Signup</Link>
+        <Link to="/login" className='nav-btn'>Login</Link>
+        
+      </div>
+
+      {/* <div className={`user ${menuBtn}`}>
+        Hay!😊{userdata.name}
+
+        {
+          userdata?.name? (<button className='btn-logout'
+          onClick={()=>{
+            localStorage.removeItem("user");
+            window.location.href = "/login"
+          }}
+          >Logout</button>) : null
+        }
+      </div> */}
+
+    </div>
+  )
 }
 
 export default Navbar

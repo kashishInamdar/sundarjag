@@ -3,4 +3,12 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+.home-container{
+    background-image: url(./../../assests/Home-bg-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
 }

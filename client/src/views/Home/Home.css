@@ -4,11 +4,45 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fff;
+   
 }
 .home-container{
-    background-image: url(./../../assests/Home-bg-img.webp);
+    background-image: url(./front-page.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 160%;
     height: 100vh;
+
+    position: relative;
+}
+.main-heading{
+    position: relative;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 900;
+    width: 600px;
+    top: 130px;
+    left: 50px;
+    text-shadow: 2px 2px black;
+}
+.p-line{
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+}
+.heading-2{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight:550;
+    color: rgb(41, 41, 84);
+}
+
+.service-container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }

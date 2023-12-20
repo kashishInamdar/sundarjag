@@ -1,4 +1,5 @@
 .nav-container {
+
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -7,6 +8,17 @@
     padding: 10PX 10px;
     font-size: 20px;
     align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 2px 20px 0 rgb(120, 120, 120);
+  margin: 0px;
+  padding: 10PX 10px;
+  font-size: 20px;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+
 }
 
 .F {

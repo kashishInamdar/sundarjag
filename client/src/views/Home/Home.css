@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-size: 160%;
     height: 100vh;
+
     position: relative;
 }
 .main-heading{
@@ -46,35 +47,3 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-.client-container{
-    background-color: rgba(255, 255, 255, 0.9);
-}
-.service-logo{
-    height: 50px;
-    margin: 4px 30px;
-}
-.clients{
-    padding-top: 15px ;
-}
-
-.wht-card{
-    padding: 10px 20px;
-    background-color: #fff;
-    height: fit-content;
-    border-radius: 10px;
-    border-left: 5px solid #0957dd;
-}
-.wht-card h3{
-    font-size: 20px;
-    font-weight: 550;
-}
-.wht-card p{
-    padding: 0;
-    margin: 3px;
-}
-.wht-card:hover{
-    background-color: #0957dd;
-   transition: 0.1s;
-    color: #fff;
-}

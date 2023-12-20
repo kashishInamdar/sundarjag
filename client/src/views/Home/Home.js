@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer"
 import Navbar from "../../components/Navbar/Navbar"
 import "./Home.css"
 import Aos from "aos"
@@ -16,6 +17,10 @@ const Home = () => {
 
             <div className="home-container">
                 <Navbar />
+
+                
+                <Footer/>
+
                 <h1 data-aos="fade-right" className="main-heading">The IDEVIFY Solutions we are passionate about transforming ideas
                     into cutting-edge software solutions.</h1>
                 <p className="p-line"></p>
@@ -73,6 +78,7 @@ const Home = () => {
 
                     </div>
                 </div>
+
             </div>
 
 

@@ -18,9 +18,6 @@ const Home = () => {
             <div className="home-container">
                 <Navbar />
 
-                
-                <Footer/>
-
                 <h1 data-aos="fade-right" className="main-heading">The IDEVIFY Solutions we are passionate about transforming ideas
                     into cutting-edge software solutions.</h1>
                 <p className="p-line"></p>
@@ -80,7 +77,7 @@ const Home = () => {
                 </div>
 
             </div>
-
+            <Footer/>
 
         </div>
 

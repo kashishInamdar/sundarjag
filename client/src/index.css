@@ -5,7 +5,6 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body{
-  background-size: 100% 100%;
-background-position: 0px 0px;
-background-image: linear-gradient(49deg, #A100FFFF 0%, #D65CE4E6 65%, #71C4FFFF 100%);
+  
+  background-color: rgb(121, 122, 123);
 }

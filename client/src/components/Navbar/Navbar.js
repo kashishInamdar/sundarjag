@@ -30,8 +30,6 @@ function Navbar() {
         <Link to="/faq" className='nav-btn'>FAQ</Link>
         
       </div>
-
-
     </div>
   )
 }

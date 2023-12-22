@@ -4,3 +4,8 @@
 .footerEmailInput{
     width: 250px;
 }
+
+.google-map{
+    background-color: aqua;
+    height: 300px;
+}

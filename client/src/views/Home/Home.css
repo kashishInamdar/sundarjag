@@ -64,6 +64,8 @@
     height: fit-content;
     border-radius: 10px;
     border-left: 5px solid #0957dd;
+    width: 500px;
+    margin: 20px;
 }
 .wht-card h3{
     font-size: 20px;

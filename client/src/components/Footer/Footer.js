@@ -10,6 +10,10 @@ function Footer() {
                     <div>
                         <img src={idevifyLogo} alt='idevifylogo' className='idevifylogo  mx-5' />
                     </div>
+                    <div className='google-map'>
+                    {/* google Map */}
+                    <div ><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Nagpur+(IDEVIFY%20Solutions)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population calculator map</a></iframe></div>
+                    </div>
 
                 </div>
 

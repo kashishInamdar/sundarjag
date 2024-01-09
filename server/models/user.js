@@ -3,17 +3,26 @@ import { Schema , model } from "mongoose";
 const userSchema = new Schema({
     name :{
         type : String,
-        required : true
+        required : [true , "Name is required"]
     },
     email : {
         type : String,
-        required : true
+        required :[ true , "Email is required"],
+        unique : true
     },
     mobile : {
-        type : String
+        type : String,
+        required : [true , "mobile is required"]
     },
     gender : {
-        type : String
+        type : String,
+        enum : ["male" , "female" , "other"],
+        default : "male",
+        required :[ true , "Gender is required"]
+    },
+    password : {
+        type : String,
+        required : [true , "Password is required"]
     }
 },{
     timestamps : true

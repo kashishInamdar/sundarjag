@@ -8,6 +8,7 @@ import Home from './views/Home/Home';
 import Contact from './views/Contact/Contact';
 import Service from './views/Service/Service';
 import OurPlan from './views/OurPlan/OurPlan';
+import Login from './views/Login/Login';
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path : "/contact",
     element : <Contact />
+  },
+  {
+    path : "/login",
+    element : <Login />
   }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));

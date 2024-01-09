@@ -6,7 +6,7 @@ import logo from "./sj-logo.png"
 
 
 const Navbar = ()=>{
-    const [bar , setBar] = useState("display")
+    const [bar , setBar] = useState("noDisplay")
 
     return(
         <div className="navbar flex justify-between items-end px-12 h-16 lg:justify-between">
@@ -18,6 +18,8 @@ const Navbar = ()=>{
                     <li> <Link to="/service" className="menu" > Service</Link> </li>
                     <li> <Link to="/plan" className="menu" > Our Plan</Link> </li>
                     <li> <Link to="/contact" className="menu" > Contact</Link> </li>
+                    <li> <Link to="/login" className="menu" > Login</Link> </li>
+                    
                 </ul>
             </div>
             <div>

@@ -1,129 +1,33 @@
-.nav-container {
-
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    box-shadow: 0 2px 20px 0 rgb(120, 120, 120);
-    margin: 0px;
-    padding: 10PX 10px;
-    font-size: 20px;
-    align-items: center;
-
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  box-shadow: 0 2px 20px 0 rgb(120, 120, 120);
-  margin: 0px;
-  padding: 10PX 10px;
-  font-size: 20px;
-  align-items: center;
-  font-family:'Times New Roman', Times, serif;
-
+.navbar{
+    color: #191e3b;
+    
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.434);
 }
-
-.F {
-    color: rgb(233, 83, 233);
-    font-family: gabriola;
-    font-size: 30px;
-    font-weight: 800;
+.menu:hover{
+    color: rgb(69, 69, 252);
 }
-
-.logoname {
-    border-bottom: 2px solid violet;
-}
-
-.nav-btn {
-    margin: 0 10px;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: rgba(36, 99, 226, 0.821);
-}
-
-.nav-btn:hover {
-    /* border-bottom: 3px solid black; */
-    background-color: violet;
-    color: white;
-
-    border-radius: 5px;
-}
-
-.btn-logout {
-    padding: 5px 20px;
-    margin-left: 20px;
-}
-
-.user {
-    display: flex;
-    justify-content: space-around
-}
-
-.logo1 {
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.col-dark {
-    color: violet;
-    font-size: 32px;
-}
-
-.menu-btn {
-    width: 25px;
-    position: absolute;
-    right: 30px;
+.toggel{
     display: none;
 }
-
-.idevifylogo {
-    width: 8rem;
+.logo{
+    height: 100px;
+    position: relative;
+    top: 25px;
 }
 
-
-@media screen and (max-width: 768px) {
-
-    .menu-btn {
-        display: block;
-        top: 25px;
+@media screen and (max-width: 600px) {
+    .menu-bar {
+       position: absolute;
+       top: 56px;
+       left: 0;
+       background-color: #ffffff;
     }
-
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-
-        justify-content: center;
-        align-items: start;
+    .toggel{
+        display:contents;
     }
-
-    .nav-btn {
-        margin: 0 0px;
-        padding: 15px 0px;
-        display: flex;
-        text-decoration: none;
-        color: black;
-    }
-
-    .nav-btn:hover {
-
-        background-color: white;
-        color: violet;
-        transition: 0s;
-        border-radius: 5px;
-    }
-
-    .btn-logout {
-
-        margin-left: 0px;
-        margin-top: 20px;
-    }
-
-    .user {
-        flex-direction: column;
-    }
-
-    .disply {
+    .noDisplay{
         display: none;
     }
-
 }
